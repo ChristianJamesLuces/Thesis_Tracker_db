@@ -29,7 +29,7 @@ CREATE TABLE GroupAdvisers (
 CREATE TABLE Enrollments (
     EnrollmentID VARCHAR(20) NOT NULL PRIMARY KEY, -- Changed to VARCHAR to match 'string [pk]'
     GroupID VARCHAR(20) NOT NULL,                  -- Placeholder for FK to Groups(GroupID)
-    CourseID VARCHAR(20) NOT NULL,                 -- Placeholder for FK to Courses(CourseID)
+    CourseID VARCHAR(10) NOT NULL,                 -- Placeholder for FK to Courses(CourseID)
     SchoolYear VARCHAR(20),                        -- Matches 'SchoolYear string'
     Semester VARCHAR(20)                           -- Matches 'Semester string'
 );
@@ -44,3 +44,4 @@ CREATE TABLE Proposals (
     Deadline DATE,                                 -- Matches 'Deadline date'
     Status VARCHAR(50)                             -- Matches 'Status string'
 );
+
