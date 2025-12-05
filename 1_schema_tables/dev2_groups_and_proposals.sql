@@ -35,7 +35,7 @@ CREATE TABLE Enrollments (
 );
 
 -- J. Proposals: The proposal details.
--- CRITICAL CHANGE: Based on ERD, this links to 'Enrollments', not 'Groups'.
+-- Based on ERD, this links to 'Enrollments', not 'Groups'.
 CREATE TABLE Proposals (
     ProposalID VARCHAR(20) NOT NULL PRIMARY KEY,   -- Changed to VARCHAR to match 'string [pk]'
     EnrollmentID VARCHAR(20) NOT NULL,             -- Placeholder for FK to Enrollments(EnrollmentID)
@@ -44,4 +44,5 @@ CREATE TABLE Proposals (
     Deadline DATE,                                 -- Matches 'Deadline date'
     Status VARCHAR(50)                             -- Matches 'Status string'
 );
+
 
