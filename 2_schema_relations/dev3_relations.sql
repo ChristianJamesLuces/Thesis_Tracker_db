@@ -5,7 +5,7 @@ FOREIGN KEY (ProposalID) REFERENCES Proposals(ProposalID) ON DELETE CASCADE;
 
 ALTER TABLE ProposalApprovals
 ADD CONSTRAINT fk_approvals_user
-FOREIGN KEY (ApproverUserID) REFERENCES Users(UserID) ON DELETE RESTRICT;
+FOREIGN KEY (ApprovedUserID) REFERENCES Users(UserID) ON DELETE RESTRICT;
 
 
 -- 2. Defenses Relations
