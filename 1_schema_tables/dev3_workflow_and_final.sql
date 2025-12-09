@@ -3,7 +3,7 @@
 CREATE TABLE ProposalApprovals (
     ApprovalID VARCHAR(20) NOT NULL PRIMARY KEY,   -- Standardized to VARCHAR(20)
     ProposalID VARCHAR(20) NOT NULL,               -- Placeholder for FK to Proposals(ProposalID)
-    ApproverUserID INT NOT NULL,                   -- Placeholder for FK to Users(UserID)
+    ApprovedUserID INT NOT NULL,                   -- Placeholder for FK to Users(UserID)
     ApprovalRole VARCHAR(50),
     Status VARCHAR(50),
     Remarks VARCHAR(255)
