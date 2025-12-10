@@ -3,7 +3,7 @@ SQL database for the DBMS Final Project (Group 2). Manages the thesis and resear
 
 ## 📁 Database Code Architecture
 
-Our database is built using a **2-phase implementation** to ensure stability and allow for parallel development. The code is organized as follows:
+Our database is built using a **3-phase implementation** to ensure stability and allow for parallel development. The code is organized as follows:
 
 ```
 /
