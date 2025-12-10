@@ -12,7 +12,7 @@ CREATE TABLE `Groups` (
 CREATE TABLE GroupMembers (
     GroupID VARCHAR(10) NOT NULL,    -- Placeholder for FK to Groups(GroupID)
     StudentUserID INT NOT NULL,      -- Placeholder for FK to Users(UserID) - specific name 'StudentUserID'
-    GroupRole VARCHAR(50),           -- Matches 'GroupRole string'
+    GroupRole VARCHAR(20),           -- Matches 'GroupRole string'
     PRIMARY KEY (GroupID, StudentUserID)
 );
 
@@ -44,6 +44,7 @@ CREATE TABLE Proposals (
     Deadline DATE,                                 -- Matches 'Deadline date'
     Status VARCHAR(20)                             -- Matches 'Status string'
 );
+
 
 
 
