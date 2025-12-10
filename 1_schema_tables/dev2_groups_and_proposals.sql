@@ -39,11 +39,12 @@ CREATE TABLE Enrollments (
 CREATE TABLE Proposals (
     ProposalID VARCHAR(10) NOT NULL PRIMARY KEY,   -- Changed to VARCHAR to match 'string [pk]'
     EnrollmentID VARCHAR(10) NOT NULL,             -- Placeholder for FK to Enrollments(EnrollmentID)
-    ResearchTitle VARCHAR(500),                    -- Matches 'ResearchTitle string'
+    ResearchTitle VARCHAR(500) UNIQUE,                    -- Matches 'ResearchTitle string'
     SubmissionDate DATE,                           -- Matches 'SubmissionDate date'
     Deadline DATE,                                 -- Matches 'Deadline date'
     Status VARCHAR(20)                             -- Matches 'Status string'
 );
+
 
 
 
