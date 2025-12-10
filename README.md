@@ -6,23 +6,37 @@ SQL database for the DBMS Final Project (Group 2). Manages the thesis and resear
 Our database is built using a **2-phase implementation** to ensure stability and allow for parallel development. The code is organized as follows:
 
 ```
-/sql
-├── 1_schema_tables
-│   ├── dev1_users_and_setup.sql
-│   ├── dev2_groups_and_proposals.sql
-│   └── dev3_workflow_and_final.sql
+/
+├── uploads                 
+│   ├── g1_proposal.pdf       
+│   ├── g2_mor_manuscript.pdf 
+│   ├── g3_mor_manuscript.pdf 
+│   ├── g3_dp1_manuscript.pdf 
+│   ├── g3_co_own.pdf         
+│   ├── g3_tech.pdf           
+│   └── g3_copy.pdf           
 │
-├── 2_schema_relations
-│   ├── dev1_relations.sql
-│   ├── dev2_relations.sql
-│   └── dev3_relations.sql
+├── archive                   
+│   └── (e.g., p3_final.pdf)
 │
-├── 3_seeds
-│   ├── 01_seed_users.sql
-│   ├── 02_seed_courses.sql
-│   └── 03_seed_groups.sql
-│
-└── Z_run_all.sql
+└── sql
+    ├── 1_schema_tables      
+    │   ├── dev1_users_and_setup.sql
+    │   ├── dev2_groups_and_proposals.sql
+    │   └── dev3_workflow_and_final.sql
+    │
+    ├── 2_schema_relations    
+    │   ├── dev1_relations.sql
+    │   ├── dev2_relations.sql
+    │   └── dev3_relations.sql
+    │
+    ├── 3_seeds        
+    │   ├── 01_seed_users.sql
+    │   ├── 02_seed_courses.sql
+    │   ├── 03_seed_groups.sql
+    │   └── 04_seed_workflow.sql
+    │
+    └── Z_run_all.sql        
 ```
 
 ### 📖 Folder Descriptions
