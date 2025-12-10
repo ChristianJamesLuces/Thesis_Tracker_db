@@ -29,3 +29,12 @@ ADD CONSTRAINT fk_courses_prereq
 FOREIGN KEY (PrerequisiteCourseID) REFERENCES Courses(CourseID)
 ON DELETE SET NULL -- If a prerequisite course is deleted, the PrerequisiteCourseID for dependent courses is set to NULL.
 ON UPDATE CASCADE;
+
+-- 4. PasswordResets Constraint (Linking to Users)
+-- NEW CONSTRAINT ADDED
+ALTER TABLE PasswordResets
+ADD CONSTRAINT fk_resets_user
+FOREIGN KEY (UserID) REFERENCES Users(UserID)
+ON DELETE CASCADE -- If user is deleted, delete their reset history
+ON UPDATE CASCADE;
+
