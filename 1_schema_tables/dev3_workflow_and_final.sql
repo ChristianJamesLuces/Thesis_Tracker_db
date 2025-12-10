@@ -53,7 +53,7 @@ CREATE TABLE Submissions (
 CREATE TABLE ResearchArchive (
     ArchiveID VARCHAR(10) NOT NULL PRIMARY KEY,    -- Standardized to VARCHAR(20)
     ProposalID VARCHAR(10) NOT NULL UNIQUE,        -- Placeholder for FK to Proposals(ProposalID)
-    AbstractFilePath VARCHAR(500),
-    FullManuscriptPath VARCHAR(500),
+    AbstractFilePath TEXT,
+    FullManuscriptPath TEXT,
     PublishedDate DATE
 );
