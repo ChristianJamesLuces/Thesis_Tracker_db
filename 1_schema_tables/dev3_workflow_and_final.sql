@@ -44,7 +44,7 @@ CREATE TABLE Submissions (
     ProposalID VARCHAR(10),                        -- Placeholder for FK to Proposals(ProposalID)
     DefenseID VARCHAR(10),                         -- Placeholder for FK to Defenses(DefenseID)
     FileType VARCHAR(50),
-    FilePath VARCHAR(500),
+    FilePath TEXT NOT NULL,
     UploadedByUserID INT NOT NULL                  -- Placeholder for FK to Users(UserID)
 );
 
