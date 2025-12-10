@@ -19,7 +19,7 @@ CREATE TABLE GroupMembers (
 -- H. GroupAdvisers: Junction table for Faculty assigning to Groups.
 -- Based on ERD: Uses 'AdviserUserID'.
 CREATE TABLE GroupAdvisers (
-    GroupID VARCHAR(20) NOT NULL,    -- Placeholder for FK to Groups(GroupID)
+    GroupID VARCHAR(10) NOT NULL,    -- Placeholder for FK to Groups(GroupID)
     AdviserUserID INT NOT NULL,      -- Placeholder for FK to Users(UserID) - specific name 'AdviserUserID'
     PRIMARY KEY (GroupID, AdviserUserID)
 );
@@ -44,6 +44,7 @@ CREATE TABLE Proposals (
     Deadline DATE,                                 -- Matches 'Deadline date'
     Status VARCHAR(20)                             -- Matches 'Status string'
 );
+
 
 
 
