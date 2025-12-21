@@ -1,4 +1,11 @@
+-- Dev1: Creation of Table 'Blocks'
 
+CREATE TABLE Blocks (
+BlockID VARCHAR(10) NOT NULL,
+BlockName VARCHAR(50) NOT NULL,
+AdviserUserID INT NOT NULL,
+PRIMARY KEY (BlockID)
+);
 -- DEV 2: Add the Relations
 -- ---------------------------------------------------------
 
