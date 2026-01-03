@@ -39,3 +39,12 @@ FOREIGN KEY (BlockID) REFERENCES Blocks(BlockID)
 ON DELETE RESTRICT
 ON UPDATE CASCADE;
 
+-- Dev3: Add the Seeds
+INSERT INTO Blocks (BlockID, BlockName, AdviserUserID) VALUES
+('2025-31', '3-1', 101),
+('2025-32', '3-2', 106),
+('2025-33', '3-3', 102),
+('2025-14', '1-4', 108),
+('2025-35', '3-5', 105),
+('2025-46', '4-6', 109),
+('2025-17', '1-7', 112);
