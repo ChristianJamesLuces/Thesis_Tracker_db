@@ -13,13 +13,13 @@ INSERT INTO Users (UserID, SchoolID, FullName, Email, BirthDate, PasswordHash) V
 (103, '2022-01003-MN-0', 'Member G1-B', 's3@gmail.com', '2003-01-03', '$2y$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa'),
 (104, '2022-01004-MN-0', 'Member G1-C', 's4@gmail.com', '2003-01-04', '$2y$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa'),
 
--- GROUP 2 STUDENTS (DP1)
+-- GROUP 2 STUDENTS 
 (105, '2022-02001-MN-0', 'Leader G2', 's5@gmail.com', '2003-02-01', '$2y$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa'),
 (106, '2022-02002-MN-0', 'Member G2-A', 's6@gmail.com', '2003-02-02', '$2y$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa'),
 (107, '2022-02003-MN-0', 'Member G2-B', 's7@gmail.com', '2003-02-03', '$2y$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa'),
 (108, '2022-02004-MN-0', 'Member G2-C', 's8@gmail.com', '2003-02-04', '$2y$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa'),
 
--- GROUP 3 STUDENTS (DP2)
+-- GROUP 3 STUDENTS 
 (109, '2022-03001-MN-0', 'Leader G3', 's9@gmail.com', '2003-03-01', '$2y$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa'),
 (110, '2022-03002-MN-0', 'Member G3-A', 's10@gmail.com', '2003-03-02', '$2y$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa'),
 (111, '2022-03003-MN-0', 'Member G3-B', 's11@gmail.com', '2003-03-03', '$2y$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa'),
