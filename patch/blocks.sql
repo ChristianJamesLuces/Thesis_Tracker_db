@@ -1,7 +1,7 @@
 -- Dev1: Creation of Table 'Blocks'
 
 CREATE TABLE Blocks (
-BlockID VARCHAR(10) NOT NULL,
+BlockID VARCHAR(15) NOT NULL,
 BlockName VARCHAR(50) NOT NULL,
 AdviserUserID INT NOT NULL,
 PRIMARY KEY (BlockID)
