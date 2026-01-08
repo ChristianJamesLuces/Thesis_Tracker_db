@@ -1,7 +1,3 @@
--- =========================================================
--- MASTER SCRIPT: BLOCKS, GROUPS, AND SEEDS
--- Covers: Dev1 (Table), Dev2 (Relations), Dev3 (Seeds & Expansion)
--- =========================================================
 
 -- Dev1: Creation of Table 'Blocks'
 CREATE TABLE Blocks (
