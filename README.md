@@ -7,36 +7,30 @@ Our database is built using a **3-phase implementation** to ensure stability and
 
 ```
 /
-├── uploads                 
-│   ├── g1_proposal.pdf       
-│   ├── g2_mor_manuscript.pdf 
-│   ├── g3_mor_manuscript.pdf 
-│   ├── g3_dp1_manuscript.pdf 
-│   ├── g3_co_own.pdf         
-│   ├── g3_tech.pdf           
-│   └── g3_copy.pdf           
-│
-├── archive                   
-│   └── (e.g., p3_final.pdf)
-│
-└── sql
-    ├── 1_schema_tables      
+├── uploads/                  # Active file directory (New proposals & manuscripts)
+├── archive/                  # Permanent repository (Successfully defended research)
+└── sql/                      # SQL Implementation Scripts
+    ├── 1_schema_tables/      # Phase 1: Physical Table Creation
     │   ├── dev1_users_and_setup.sql
     │   ├── dev2_groups_and_proposals.sql
     │   └── dev3_workflow_and_final.sql
     │
-    ├── 2_schema_relations    
+    ├── 2_schema_relations/   # Phase 2: Foreign Key Implementation
     │   ├── dev1_relations.sql
     │   ├── dev2_relations.sql
     │   └── dev3_relations.sql
     │
-    ├── 3_seeds        
+    ├── 3_seeds/              # Phase 3: Dummy Data Population
     │   ├── 01_seed_users.sql
     │   ├── 02_seed_courses.sql
     │   ├── 03_seed_groups.sql
-    │   └── 04_seed_workflow.sql
+    │   └── 04_workflow_seed.sql
     │
-    └── Z_run_all.sql        
+    ├── patch/                # System Extensions & Modifications
+    │   ├── blocks.sql        # Academic section & adviser setup
+    │   └── committee.sql     # MOR review workflow & panel data
+    │
+    └── Z_run_all.sql         # Master Deployment Script    
 ```
 
 ### 📖 Folder Descriptions
@@ -60,6 +54,10 @@ Our database is built using a **3-phase implementation** to ensure stability and
 * **`3_seeds` (Phase 3)**
     * **Purpose:** Contains `INSERT` scripts to populate the database with "dummy" test data for the frontend and backend teams.
     * **Rule:** Files must be executed in order (01, 02, 03, 04).
+      
+* **`patch` (Phase 3)**
+    * **Purpose:**Contains modular extensions and system modifications, such as academic section (Block) management and specialized committee review workflows.
+    * **Rule:** Patch scripts must be executed after the core schema is established but before final seeding to ensure structural updates are available for dummy data.
 
 * **`Z_run_all.sql` (Master Script)**
     * **Purpose:** The **master script**. This single file runs all scripts from the other folders in the correct order to build the entire database from scratch.
