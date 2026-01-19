@@ -1,7 +1,7 @@
 # Thesis_Tracker_db
 SQL database for the DBMS Final Project (Group 2). Manages the thesis and research process.
 
-## 📁 Database Code Architecture
+## 📁 Database Code Structure
 
 Our database is built using a **3-phase implementation** to ensure stability and allow for parallel development. The code is organized as follows:
 
